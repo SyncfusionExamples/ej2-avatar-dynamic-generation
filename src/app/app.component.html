@@ -1,0 +1,50 @@
+<div class="dynamic-avatar">
+  <h2 style="-webkit-margin-before:0.3em">Dynamic avatar generation</h2>
+  <span>
+    <b>Email: </b>
+  </span>
+  <input type="email" placeholder="blog@syncfusion.com" (focusout)="onFocusOut($event)" />
+  <br/>
+  <br/>
+
+  <span>
+    <b>Email Hash: </b>
+  </span>
+  <span>{{hash}}</span>
+  <br/>
+  <br/>
+
+
+  <div id='element' *ngIf="hash">
+    <div class="avatar-container">
+      <span class="e-avatar e-avatar-xlarge">
+        <img [src]="avatar" />
+      </span>
+      <span class="e-badge e-badge-secondary e-badge-notification e-badge-overlap e-badge-circle">5</span>
+    </div>
+    <div class="avatar-container">
+      <span class="e-avatar e-avatar-large">
+        <img [src]="avatar" />
+      </span>
+      <span class="e-badge e-badge-secondary e-badge-notification e-badge-overlap">10</span>
+    </div>
+    <div class="avatar-container">
+      <span class="e-avatar">
+        <img [src]="avatar" />
+      </span>
+      <span class="e-badge e-badge-secondary e-badge-notification e-badge-overlap">44</span>
+    </div>
+    <div class="avatar-container">
+      <span class="e-avatar e-avatar-small">
+        <img [src]="avatar" />
+      </span>
+      <span class="e-badge e-badge-info e-badge-notification e-badge-overlap">23</span>
+    </div>
+    <div class="avatar-container">
+      <span class="e-avatar e-avatar-xsmall">
+        <img [src]="avatar" />
+      </span>
+      <span class="e-badge e-badge-info e-badge-notification e-badge-overlap e-badge-circle">5</span>
+    </div>
+  </div>
+</div>
