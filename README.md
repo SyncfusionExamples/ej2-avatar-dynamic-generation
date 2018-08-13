@@ -1,4 +1,4 @@
-# Sample
+# Dynamically generate and integrate GitHub like default user avatar
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
